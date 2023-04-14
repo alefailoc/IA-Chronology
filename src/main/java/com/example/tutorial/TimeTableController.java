@@ -40,7 +40,7 @@ public class TimeTableController {
         cal.add(Calendar.WEEK_OF_YEAR, 1);
         Date oneWeekLater = cal.getTime();
 
-        tasks.add(new Task("homework", "taskDetails", 9, 2));
+        tasks.add(new Task("homework", "taskDetails", oneWeekLater, 2));
 
         //Weekend code, tables
         TableView<Task> saturdayTable = new TableView<Task>();

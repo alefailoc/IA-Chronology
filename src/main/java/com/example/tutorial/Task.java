@@ -1,20 +1,21 @@
 package com.example.tutorial;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public class Task {
 
     String task;
     String taskDetails;
-    LocalDate dueDate;
+    Date dueDate;
     int expectedTimeToTake;
 
-    public Task(String task, String taskDetails, int dueDate, int expectedTimeToTake) {
+    public Task(String task, String taskDetails, Date dueDate, int expectedTimeToTake) {
         this.task = task;
         this.taskDetails = taskDetails;
         this.dueDate = dueDate;
         this.expectedTimeToTake = expectedTimeToTake;
     }
+
 
     public String getTask() {
         return task;
@@ -32,11 +33,11 @@ public class Task {
         this.taskDetails = taskDetails;
     }
 
-    public getdueDate() {
+    public Date getdueDate() {
         return dueDate;
     }
 
-    public void setdueDate(dueDate) {
+    public void setdueDate(Date dueDate) {
         this.dueDate = dueDate;
     }
 
